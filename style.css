@@ -69,9 +69,13 @@ main {
     margin-top: 20px;
 }
 
+.cards-red-yellow {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
 .green-card {
-    grid-column: 1;
-    grid-row: span 2;
     align-self: center;
     border-style: solid;
     border-width: 4px;
@@ -79,29 +83,61 @@ main {
 }
 
 .red-card {
-    grid-column: 2;
     border-style: solid;
     border-width: 4px;
     border-color: hsl(0, 78%, 62%) white white white;
 }
 
-
 .yellow-card {
-    grid-column: 2;
     border-style: solid;
     border-width: 4px;
     border-color: hsl(34, 97%, 64%) white white white;
 }
 
 .blue-card {
-    grid-column: 3;
-    grid-row: 1 / -1;
     align-self: center;
     border-style: solid;
     border-width: 4px;
     border-color: hsl(212, 86%, 64%) white white white;
 }
 
+.card:hover {
+    transition: transform 1s;
+    transform: scale(1.05);
+}
+
+@media (max-width: 375px) {
+    main {
+        margin: 50px 30px;
+    }    
+    .text-1 {
+        font-size: 1.4rem;
+    }
+    
+    .text-2 {
+        font-size: 1.4rem;
+    }
+    
+    .frist-text p {
+        margin: 20px 0px;
+        font-size: 0.9rem;
+    }
+    .cards {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .card h2 {
+        font-size: 1.1rem;
+    }
+    
+    .card p {
+        font-size: 0.75rem;
+    }
+    .card img {
+       transform: scale(0.75);
+    }
+}
 
 
 
