@@ -10,7 +10,9 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![Design](image-1.png)
+
+![Mobile-first](image.png)
 
 ### Built with
 
